@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     libmllite \
     libmplmpu \
 
+# Allow dexopting system apps to /cache and not /data
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dalvik.vm.dexopttocache=1
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
