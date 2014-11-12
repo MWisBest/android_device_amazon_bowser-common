@@ -67,7 +67,8 @@ static struct sensor_t sSensorList[LOCAL_SENSORS + MPLSensor::numSensors] = {
           10000.0f,
 	  1.0f,
 	  0.5f,
-	  0, 0, 0, { } },
+	  0, 0, 0, 0, 0, 0,
+	  SENSOR_FLAG_ON_CHANGE_MODE, { } },
 };
 static int numSensors = LOCAL_SENSORS;
 
